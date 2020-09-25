@@ -1,0 +1,40 @@
+﻿@model MvcCv.Models.Sinif.Class1
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+
+<table class="table table-bordered">
+    <thead>
+
+        <tr>
+            <th>ID</th>
+            <th>YETENEK</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+            <th>Silme İşlemi</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model.Deger4)
+        {
+            <tr>
+                <td>@x.ID</td>
+                <td>@x.SKILL</td>
+                <td><a href="~/Yeteneklerim/YetenekSil/@x.ID" class="btn btn-danger">Sil</a></td>
+                <td><a href="" class="btn btn-success">Güncelle</a></td>
+                <td>@Html.ActionLink("Sİlme İşlemi","YetenekSil",new { id=x.ID},new {@class="btn btn-warning", onclick="return confirm('Silmek istediğinize emin misiniz?')"})</td>
+            </tr>
+        }
+
+
+    </tbody>
+</table>
+
+<a href="~/Yeteneklerim/YeniYetenek" class="btn btn-info">Yeni Yetenek Ekle</a>
+
+
+

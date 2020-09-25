@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MvcCv",
+    "\\MvcCv\\Controllers",
+    "\\MvcCv\\Models\\Entity",
+    "\\MvcCv\\startbootstrap-resume-gh-pages",
+    "\\MvcCv\\startbootstrap-resume-gh-pages\\startbootstrap-resume-gh-pages",
+    "\\MvcCv\\Views",
+    "\\MvcCv\\Views\\Default",
+    "\\MvcCv\\Views\\Home",
+    "\\MvcCv\\Views\\Shared"
+  ],
+  "SelectedNode": "\\MvcCv\\Views\\Default\\Index.cshtml",
+  "PreviewInSolutionExplorer": false
+}
